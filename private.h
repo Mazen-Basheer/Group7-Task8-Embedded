@@ -10,5 +10,6 @@
 #define ADC1_SQR3 (*(volatile unsigned int *)(ADC1_BASE_ADDRESS + 0x34))
 #define RCC_APB2ENR (*(volatile unsigned int *)(ADC1_BASE_ADDRESS + 0x44))
 #define ADC_CCR (*(volatile unsigned int *)(ADC1_BASE_ADDRESS + 0x04))
-
+#define ADC_DR (*(volatile unsigned int *)(ADC1_BASE_ADDRESS + 0x4C))
+#define ADC_SR (*(volatile unsigned int *)(ADC1_BASE_ADDRESS + 0x00))
 #endif
