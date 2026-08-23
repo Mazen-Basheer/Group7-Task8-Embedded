@@ -19,34 +19,34 @@
 #define RCC_AHB1ENR_OFFSET      0x30
 
 //a
-#define GPIOA_MODER     ((volatile unsigned int*)(GPIOA_BASE_ADDR + GPIO_MODER_OFFSET))
-#define GPIOA_OTYPER    ((volatile unsigned int*)(GPIOA_BASE_ADDR + GPIO_OTYPER_OFFSET))
-#define GPIOA_OSPEEDR   ((volatile unsigned int*)(GPIOA_BASE_ADDR + GPIO_OSPEEDR_OFFSET))
-#define GPIOA_PUPDR     ((volatile unsigned int*)(GPIOA_BASE_ADDR + GPIO_PUPDR_OFFSET))
-#define GPIOA_IDR       ((volatile unsigned int*)(GPIOA_BASE_ADDR + GPIO_IDR_OFFSET))
-#define GPIOA_ODR       ((volatile unsigned int*)(GPIOA_BASE_ADDR + GPIO_ODR_OFFSET))
-#define GPIOA_BSRR      ((volatile unsigned int*)(GPIOA_BASE_ADDR + GPIO_BSRR_OFFSET))
+#define GPIOA_MODER     (*(volatile unsigned int*)(GPIOA_BASE_ADDR + GPIO_MODER_OFFSET))
+#define GPIOA_OTYPER    (*(volatile unsigned int*)(GPIOA_BASE_ADDR + GPIO_OTYPER_OFFSET))
+#define GPIOA_OSPEEDR   (*(volatile unsigned int*)(GPIOA_BASE_ADDR + GPIO_OSPEEDR_OFFSET))
+#define GPIOA_PUPDR     (*(volatile unsigned int*)(GPIOA_BASE_ADDR + GPIO_PUPDR_OFFSET))
+#define GPIOA_IDR       (*(volatile unsigned int*)(GPIOA_BASE_ADDR + GPIO_IDR_OFFSET))
+#define GPIOA_ODR       (*(volatile unsigned int*)(GPIOA_BASE_ADDR + GPIO_ODR_OFFSET))
+#define GPIOA_BSRR      (*(volatile unsigned int*)(GPIOA_BASE_ADDR + GPIO_BSRR_OFFSET))
 
 //b
-#define GPIOB_MODER     ((volatile unsigned int*)(GPIOB_BASE_ADDR + GPIO_MODER_OFFSET))
-#define GPIOB_OTYPER    ((volatile unsigned int*)(GPIOB_BASE_ADDR + GPIO_OTYPER_OFFSET))
-#define GPIOB_OSPEEDR   ((volatile unsigned int*)(GPIOB_BASE_ADDR + GPIO_OSPEEDR_OFFSET))
-#define GPIOB_PUPDR     ((volatile unsigned int*)(GPIOB_BASE_ADDR + GPIO_PUPDR_OFFSET))
-#define GPIOB_IDR       ((volatile unsigned int*)(GPIOB_BASE_ADDR + GPIO_IDR_OFFSET))
-#define GPIOB_ODR       ((volatile unsigned int*)(GPIOB_BASE_ADDR + GPIO_ODR_OFFSET))
-#define GPIOB_BSRR      ((volatile unsigned int*)(GPIOB_BASE_ADDR + GPIO_BSRR_OFFSET))
+#define GPIOB_MODER     (*(volatile unsigned int*)(GPIOB_BASE_ADDR + GPIO_MODER_OFFSET))
+#define GPIOB_OTYPER    (*(volatile unsigned int*)(GPIOB_BASE_ADDR + GPIO_OTYPER_OFFSET))
+#define GPIOB_OSPEEDR   (*(volatile unsigned int*)(GPIOB_BASE_ADDR + GPIO_OSPEEDR_OFFSET))
+#define GPIOB_PUPDR     (*(volatile unsigned int*)(GPIOB_BASE_ADDR + GPIO_PUPDR_OFFSET))
+#define GPIOB_IDR       (*(volatile unsigned int*)(GPIOB_BASE_ADDR + GPIO_IDR_OFFSET))
+#define GPIOB_ODR       (*(volatile unsigned int*)(GPIOB_BASE_ADDR + GPIO_ODR_OFFSET))
+#define GPIOB_BSRR      (*(volatile unsigned int*)(GPIOB_BASE_ADDR + GPIO_BSRR_OFFSET))
 
 //c
-#define GPIOC_MODER     ((volatile unsigned int*)(GPIOC_BASE_ADDR + GPIO_MODER_OFFSET))
-#define GPIOC_OTYPER    ((volatile unsigned int*)(GPIOC_BASE_ADDR + GPIO_OTYPER_OFFSET))
-#define GPIOC_OSPEEDR   ((volatile unsigned int*)(GPIOC_BASE_ADDR + GPIO_OSPEEDR_OFFSET))
-#define GPIOC_PUPDR     ((volatile unsigned int*)(GPIOC_BASE_ADDR + GPIO_PUPDR_OFFSET))
-#define GPIOC_IDR       ((volatile unsigned int*)(GPIOC_BASE_ADDR + GPIO_IDR_OFFSET))
-#define GPIOC_ODR       ((volatile unsigned int*)(GPIOC_BASE_ADDR + GPIO_ODR_OFFSET))
-#define GPIOC_BSRR      ((volatile unsigned int*)(GPIOC_BASE_ADDR + GPIO_BSRR_OFFSET))
+#define GPIOC_MODER     (*(volatile unsigned int*)(GPIOC_BASE_ADDR + GPIO_MODER_OFFSET))
+#define GPIOC_OTYPER    (*(volatile unsigned int*)(GPIOC_BASE_ADDR + GPIO_OTYPER_OFFSET))
+#define GPIOC_OSPEEDR   (*(volatile unsigned int*)(GPIOC_BASE_ADDR + GPIO_OSPEEDR_OFFSET))
+#define GPIOC_PUPDR     (*(volatile unsigned int*)(GPIOC_BASE_ADDR + GPIO_PUPDR_OFFSET))
+#define GPIOC_IDR       (*(volatile unsigned int*)(GPIOC_BASE_ADDR + GPIO_IDR_OFFSET))
+#define GPIOC_ODR       (*(volatile unsigned int*)(GPIOC_BASE_ADDR + GPIO_ODR_OFFSET))
+#define GPIOC_BSRR      (*(volatile unsigned int*)(GPIOC_BASE_ADDR + GPIO_BSRR_OFFSET))
 
 //clock enable register + bits
-#define RCC_AHB1ENR     ((volatile unsigned int*)(RCC_BASE_ADDR + RCC_AHB1ENR_OFFSET))
+#define RCC_AHB1ENR     (*(volatile unsigned int*)(RCC_BASE_ADDR + RCC_AHB1ENR_OFFSET))
 
 #define RCC_AHB1ENR_GPIOAEN     0
 #define RCC_AHB1ENR_GPIOBEN     1
